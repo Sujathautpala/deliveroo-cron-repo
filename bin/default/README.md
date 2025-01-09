@@ -7,12 +7,12 @@
     `./gradlew clean build`
 - It will create the jar in `build/libs/` directory by the name `deliveroo-cron-parser-1.0-SNAPSHOT.jar`
 - To run the the jar use the below command<br>
-    `java -cp build/libs/deliveroo-cron-parser-1.0-SNAPSHOT.jar  deliveroo.Parser <CRON EXPRESSION>`
+    `java -cp build/libs/deliveroo-cron-parser-1.0-SNAPSHOT.jar   src.main.java.deliveroo.Parser <CRON EXPRESSION>`
 
 
 ### Sample command and corresponding output
 #### Command
-`java -cp build/libs/deliveroo-cron-parser-1.0-SNAPSHOT.jar  deliveroo.Parser "*/15 0 1,15  * 1-5 /usr/bin/find"`
+`java -cp build/libs/deliveroo-cron-parser-1.0-SNAPSHOT.jar   src.main.java.deliveroo.Parser "*/15 0 1,15  * 1-5 /usr/bin/find"`
 #### Output
 ```
 minute          0 15 30 45
